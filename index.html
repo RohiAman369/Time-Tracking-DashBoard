@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="main-area">
+      <div class="box" id = "profile">
+        <div id = "upper-part">
+          <div id = "profile-img">
+            <img src = "images/image-jeremy.png">
+          </div>
+          <div id = "wrt-prof">
+            <p class="light-weight-text">Report for</p>
+            <p id = "person">Jeremy Robson</p>
+          </div>
+        </div>
+        <div id = "lower-part">
+          <div class="timeStamp" id="daily">daily</div>
+          <div class="timeStamp" id="weekly">weekly</div>
+          <div class="timeStamp" id="monthly">monthly</div>
+
+        </div>
+      </div>
+      <div class="box" id = "work">
+        <div class="bckg-img">
+          <img src = "images/icon-work.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Work</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "work-timing">32</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "work-lst-tmg">36</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id = "play">
+        <div class="bckg-img">
+          <img src = "images/icon-play.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Play</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "play-timing">10</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "play-lst-tmg">8</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id = "study">
+        <div class="bckg-img">
+          <img src = "images/icon-study.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Study</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "study-timing">4</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "study-lst-tmg">7</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id = "exercise">
+        <div class="bckg-img">
+          <img src = "images/icon-exercise.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Exercise</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "exercise-timing">4</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "exercise-lst-tmg">5</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id = "social">
+        <div class="bckg-img">
+          <img src = "images/icon-social.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Social</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "social-timing">5</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "social-lst-tmg">10</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id = "self-care">
+        <div class="bckg-img">
+          <img src = "images/icon-self-care.svg">
+        </div>
+        <div class="info-section">
+          <div class="header">
+            <div class="title">Self Care</div>
+            <div class="dt-icon">
+              <img src="images/icon-ellipsis.svg">
+            </div>
+          </div>
+          <div class="tim-up-div">
+            <div class="timing">
+              <span id = "self-care-timing">2</span> hrs
+            </div>
+            <div class="light-weight-text martp15px">
+              Last Week - <span id = "self-care-lst-tmg">2</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

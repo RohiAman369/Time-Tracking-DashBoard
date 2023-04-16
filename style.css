@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+}
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --LightOrange: hsl(15, 100%, 70%);
+    --SoftBlue: hsl(195, 74%, 62%);
+    --LightRed: hsl(348, 100%, 68%);
+    --LimeGreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --SoftOrange: hsl(43, 84%, 65%);
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+body{
+    background-color:var(--VeryDarkBlue);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top:4em;
+    overflow-y: scroll;
+}
+.main-area{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width:1000px;
+    height: 500px;
+    grid-gap: 1rem;
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    margin: 0 auto;
+}
+.box{
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+#profile{
+    grid-row: span 2;
+    background-color:var(--DarkBlue);
+}
+#upper-part{
+    height: 65%;
+    padding-left:1.5em;
+    border-radius: 18px;
+    background-color: var(--Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    
+}
+#profile-img{
+    border:2px solid white;
+    border-radius: 50%;
+    width:6rem;
+    height: 6rem;
+}
+#profile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.light-weight-text{
+    font-size: 1rem;
+    color: rgba(255, 255, 255,0.3);
+}
+#person{
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+}
+
+#lower-part{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1.5em;
+}
+.timeStamp{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.5;
+    transition: opacity 250ms ease-in-out;
+    cursor: pointer;
+}
+.timeStamp:hover{
+    opacity: 1;
+}
+
+#work{
+    background-color:var(--LightOrange);
+}
+
+#play{
+    background-color:var(--SoftBlue);
+}
+#study{
+    background-color:var(--LightRed);
+}
+#exercise{
+    background-color:var(--LimeGreen);
+}
+#social{
+    background-color:var(--Violet);
+}
+#self-care{
+    background-color:var(--SoftOrange);
+}
+
+.bckg-img{
+    position:absolute;
+    top:-13px;
+    right: 0.5rem;
+    opacity: 0.8;
+}
+.info-section{
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--DarkBlue);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    z-index: 1;
+    transition: background-color 500ms ease-in-out;
+    cursor: pointer;
+    
+}
+.box:hover .info-section{
+    background-color: var(--DesaturatedBlue);
+}
+.header{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.dt-icon{
+    position:absolute;
+    right:1rem;
+    transition: opacity 500ms ease-in-out;
+    opacity: 0.7;
+}
+.dt-icon:hover{
+    opacity: 1;
+}
+.title{
+    font-size: 1.3rem;
+}
+.tim-up-div{
+    display: flex;
+    flex-direction: column;
+}
+.timing{
+    font-size: 3.5rem;
+}
+.martp15px{
+    margin-top: 15px;
+}
+
+
+
+@media (max-width:750px) {
+    html{
+        font-size: 12px;
+    }
+    .main-area{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,250px);
+        grid-gap: 0rem;
+
+    }
+    #profile{
+        grid-row: span 1;
+    }
+    .container{
+        margin-bottom: 4rem;
+    }
+    .box{
+        margin: 0 auto;
+        width:80%;
+        height: 200px;
+    }
+    .info-section{
+        height: 150px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .tim-up-div,
+    #lower-part,
+    #upper-part{
+        flex-direction: row;
+        align-items: center;
+    }
+    .timeStamp{
+        font-size: 1.5rem;
+    }
+    .tim-up-div{
+        justify-content: space-between;
+    }
+    .light-weight-text{
+        font-size: 1.3rem;
+    }
+}
